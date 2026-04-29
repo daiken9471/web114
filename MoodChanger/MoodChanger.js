@@ -20,9 +20,9 @@ StarWarsBtn.style.backgroundColor = "#000000";
 StarWarsBtn.style.color = "#ffff00"
 //------------------------------------------------------------------------------------------------------------------
 const moods = {
-    happy: {name: "Happy", bg: "#ffff00", text: "#4a58f2", quote: "Everything feels bright and fun!"},
-    calm: {name: "Calm", bg: "#cbc3e3", text: "#fcf4a3", quote: "Deep breath in. Everything is gonna be alright!"},
-    angry: {name: "Angry", bg: "#cc1100", text: "#333333", quote: "This I cannot abide!"},
+    happy: {name: "Happy", image: ("url(happyFaceImage.jpg)"),/*bg: "#ffff00",*/ text: "#4a58f2", quote: "Everything feels bright and fun!", },
+    calm: {name: "Calm",image: ("url(calm.jpg)"), bg: "#cbc3e3", text: "#fcf4a3", quote: "Deep breath in. Everything is gonna be alright!"},
+    angry: {name: "Angry",image: "none", bg: "#cc1100", text: "#333333", quote: "This I cannot abide!"},
     sleepy: {name: "Sleepy", bg: "#301934", text: "#d8bfd8", quote: "Get some rest. You earned it!"},
     StarWars: {name: "StarWars", bg: "#000000", text: "#ffff00", quote: "May the force be with you!"}
     
@@ -31,16 +31,24 @@ const moods = {
 function changeMood(moodName){
     const mood = moods[moodName]
     //change the page info
-    document.body.style.backgroundColor = mood.bg
+    document.body.style.backgroundImage = mood.image
+    document.body.style.backgroundSize = "50%"
+    document.body.style.backgroundPosition = "center"
+    document.body.style.backgroundRepeat = "no-repeat"
+    document.body.style.backgroundColor = mood.bg    
+    console.log (`${mood.bg}`)
+    
     document.body.style.color = mood.text
     //change the message in the quote
     quote.textContent = mood.quote
     //change the title content
     title.textContent = mood.name.toUpperCase()
+    
+    console.log(`${mood.image}`)
+    
     //Testing
     console.log(`mood selected: ${moodName}`)
-    console.log(`mood settings: ${mood}`)
-    
+    console.log(`mood settings: ${mood}`)    
 }
 //------------------------------------------------------------------------------------------------------------------
 function happy(){changeMood("happy")}
