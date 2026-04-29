@@ -1,0 +1,40 @@
+<!-- David Aiken 4/15/26-->
+ <!DOCTYPE html>
+ <html>
+<head>
+    <title>Mood Switcher</title>
+    <script src ="MoodChanger.js" defer></script>
+    <link rel="stylesheet" href="moods.css">
+</head>
+
+<body>
+    <h1> Project 7 -- DOM and JS</h1>
+        <section id="questions">
+            <h2>Javascript Questions</h2>            
+            <h3>1. Why is textContent safer than innerHTML?</h3>
+            <p><strong>Answer:</strong> It cannot be as easily abused by hackers and general Ne'er-Do-Wells.</p>            
+            <h3>2. How are HTML elements connected to Javascript variables using DOM selection?</h3>
+            <p><strong>Answer:</strong> Using document.querySelector("element to connect")</p>            
+            <h3>3. What would happen to the text box with the id="text" if I added this line to the code above it:</h3>
+            <p><code>text.textContent = "Hello!"</code></p>
+            <p><strong>Answer:</strong> It would change to say Hello!</p>            
+        </section>
+
+    <h2 id="title">Choose a Mood</h2>
+    <p>Click a mood to change the theme</p>
+
+    <div id ="buttons">
+        <button class="mood-btn" id="happyBtn">Happy</button>
+        <button class="mood-btn" id="calmBtn">Calm</button>
+        <button class="mood-btn" id="angryBtn">Angry</button>
+        <button class="mood-btn" id="sleepyBtn">Sleepy</button> <br>
+        <button class="mood-btn" id="StarWarsBtn">StarWars</button>
+    </div>  
+    
+    <h2>I tried to figure out how to add .starwars{perspective adjustments} in CSS and then link that to the Javacript</h2>
+    <h2>to make al the text look like the opening crawl of a starwars movie when you click the button.</h2>
+    <h2>Maybe that's something you can help me figure out later?</h2>
+    <p id="quote">No mood selected...</p>
+
+</body>
+</html>
