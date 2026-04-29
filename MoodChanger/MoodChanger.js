@@ -23,8 +23,8 @@ const moods = {
     happy: {name: "Happy", image: ("url(happyFaceImage.jpg)"),/*bg: "#ffff00",*/ text: "#4a58f2", quote: "Everything feels bright and fun!", },
     calm: {name: "Calm",image: ("url(calm.jpg)"), bg: "#cbc3e3", text: "#fcf4a3", quote: "Deep breath in. Everything is gonna be alright!"},
     angry: {name: "Angry",image: "none", bg: "#cc1100", text: "#333333", quote: "This I cannot abide!"},
-    sleepy: {name: "Sleepy", bg: "#301934", text: "#d8bfd8", quote: "Get some rest. You earned it!"},
-    StarWars: {name: "StarWars", bg: "#000000", text: "#ffff00", quote: "May the force be with you!"}
+    sleepy: {name: "Sleepy",image: "none", bg: "#301934", text: "#d8bfd8", quote: "Get some rest. You earned it!"},
+    StarWars: {name: "StarWars",image: "none", bg: "#000000", text: "#ffff00", quote: "May the force be with you!"}
     
 }
 //------------------------------------------------------------------------------------------------------------------
