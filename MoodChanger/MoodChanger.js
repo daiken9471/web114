@@ -4,7 +4,10 @@ const quote = document.querySelector("#quote")
 const title = document.querySelector("#title")
 //someone asked right before we left about how to change the button color so I thought that'd be fun to try too.
 const happyBtn = document.querySelector("#happyBtn")
-happyBtn.style.backgroundColor = "#ffff00";
+happyBtn.style.backgroundImage = ("url(happyFaceImage.jpg)");
+happyBtn.style.backgroundSize = "100%"
+happyBtn.style.backgroundPosition = "center"
+happyBtn.style.backgroundRepeat = "no-repeat"
 happyBtn.style.color = "#4a58f2"
 const calmBtn = document.querySelector("#calmBtn")
 calmBtn.style.backgroundColor = "#cbc3e3";

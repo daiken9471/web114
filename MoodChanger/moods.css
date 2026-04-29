@@ -15,13 +15,13 @@ h1 {
 }
 
 .mood-btn {
-  padding: 14px 24px;
-  margin: 8px;
+  padding: 50px 50px;
+  margin: 25px;
   font-size: 1.1rem;
   font-weight: bold;
   cursor: pointer;
   border: none;
-  border-radius: 12px;
+  border-radius: 20px;
 }
 
 #quote {
