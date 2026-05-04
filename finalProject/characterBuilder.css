@@ -1,0 +1,54 @@
+/* David Aiken 4/29/26 */
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  padding: 50px;
+  transition: all 1.5s ease;
+  min-height: 100vh;
+  margin: 0;
+  background-color: black;
+  color: white;}
+
+h1 {
+  font-size: 5rem;
+  padding: 20px 20px;}
+
+.class-btn {
+  padding: 100px 100px;
+  margin: 25px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  border: none;
+  border-radius: 20px;
+  background-size: contain;}
+
+#quote {
+  margin-top: 40px;
+  font-size: 1.8rem;
+  font-weight: bold;}
+
+.stat-btn{
+  padding: 25px 100px;
+  margin: 25px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  border: none;
+  border-radius: 20px;
+  background-size: contain;
+  background-color: #545454;
+  color: #ffffff;
+
+}
+
+.race{
+  background-color:#545454;
+  color: #ffffff;
+  padding: 25px 100px;
+  margin: 25px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  border: none;
+  border-radius: 20px;}

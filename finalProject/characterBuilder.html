@@ -1,0 +1,63 @@
+<!-- David Aiken 4/29/26-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Movie Gallery</title>
+  <link rel="stylesheet" href="characterBuilder.css">
+  <script src="characterBuilder.js" defer> </script>
+</head>
+
+<body>  
+
+  <h1 id="title">Select a Class</h1>
+  <p>Click an image to select your class</p>
+
+  <div id ="buttons">
+      <button class="class-btn" id="barbarianButton">Barbarian</button>
+      <button class="class-btn" id="bardButton">Bard</button>
+      <button class="class-btn" id="clericButton">Cleric</button> 
+      <br>
+      <p>Finding png images that truly have a transparent background was taking forever so I gave up after 3.</p>
+      <p>Those cleric, paladin, and bard images look pretty cool though.</p>
+      <button class="class-btn" id="paladinButton">Paladin</button>
+      <button class="class-btn" id="rogueButton">Rogue</button>
+      <button class="class-btn" id="wizardButton">Wizard</button>
+  </div>  
+  <p id="quote"></p>
+  <br>
+  
+  <button class="race">
+    <label for="race">Race:</label>     
+      <select id="race" name="race" required>    
+          <option value="race">Please select a race</option>      
+          <option value="dwarf">Dwarf</option>
+          <option value="elf">Elf</option>          
+          <option value="human">Human</option>
+          <option value="orc">Orc</option>          
+      </select>
+  </button>
+  <p id="raceQuote"></p>
+  </div>
+  <br>
+
+  <h3>Allocate stat points:</h3>
+  <div id ="buttons">
+      <button class="stat-btn" id="pointsButton">Points Available: 15</button> 
+      <br>
+      <button class="stat-btn" id="strengthButton">Strength = 10</button>   
+      <button class="stat-btn" id="dexterityButton">Dexterity = 10</button>
+      <button class="stat-btn" id="constitutionButton">Constitution = 10</button> 
+      <br>
+      <button class="stat-btn" id="intelligenceButton">Intelligence = 10</button>
+      <button class="stat-btn" id="wisdomButton">Wisdom = 10</button>
+      <button class="stat-btn" id="charismaButton">Charisma = 10</button>
+  </div>
+  
+ 
+
+
+</body>
+
+</html>
